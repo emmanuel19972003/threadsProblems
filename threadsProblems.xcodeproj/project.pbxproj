@@ -16,6 +16,8 @@
 		9FB580CF2C7E84E200B0089A /* threadsProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580CE2C7E84E200B0089A /* threadsProblemsTests.swift */; };
 		9FB580D92C7E84E200B0089A /* threadsProblemsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580D82C7E84E200B0089A /* threadsProblemsUITests.swift */; };
 		9FB580DB2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */; };
+		9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580E92C7E8D0F00B0089A /* testController.swift */; };
+		9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580EB2C7E934C00B0089A /* MasterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9FB580D42C7E84E200B0089A /* threadsProblemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threadsProblemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB580D82C7E84E200B0089A /* threadsProblemsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threadsProblemsUITests.swift; sourceTree = "<group>"; };
 		9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threadsProblemsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FB580E92C7E8D0F00B0089A /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
+		9FB580EB2C7E934C00B0089A /* MasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,9 @@
 		9FB580B62C7E84E000B0089A /* threadsProblems */ = {
 			isa = PBXGroup;
 			children = (
-				9FB580B72C7E84E000B0089A /* AppDelegate.swift */,
-				9FB580B92C7E84E000B0089A /* SceneDelegate.swift */,
-				9FB580BB2C7E84E000B0089A /* ViewController.swift */,
-				9FB580BD2C7E84E000B0089A /* Main.storyboard */,
+				9FB580ED2C7E94A300B0089A /* App Delegates */,
+				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
+				9FB580EF2C7E94E900B0089A /* Controllers */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
 				9FB580C22C7E84E200B0089A /* LaunchScreen.storyboard */,
 				9FB580C52C7E84E200B0089A /* Info.plist */,
@@ -125,6 +128,41 @@
 				9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */,
 			);
 			path = threadsProblemsUITests;
+			sourceTree = "<group>";
+		};
+		9FB580ED2C7E94A300B0089A /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9FB580EE2C7E94D800B0089A /* Main View */,
+				9FB580B72C7E84E000B0089A /* AppDelegate.swift */,
+				9FB580B92C7E84E000B0089A /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		9FB580EE2C7E94D800B0089A /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				9FB580BB2C7E84E000B0089A /* ViewController.swift */,
+				9FB580BD2C7E84E000B0089A /* Main.storyboard */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		9FB580EF2C7E94E900B0089A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FB580F02C7E94F800B0089A /* testController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9FB580F02C7E94F800B0089A /* testController */ = {
+			isa = PBXGroup;
+			children = (
+				9FB580E92C7E8D0F00B0089A /* testController.swift */,
+			);
+			path = testController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */,
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
+				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
