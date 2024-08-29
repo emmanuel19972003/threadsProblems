@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FB390E52C7F767E00A22E72 /* diningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */; };
 		9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B72C7E84E000B0089A /* AppDelegate.swift */; };
 		9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B92C7E84E000B0089A /* SceneDelegate.swift */; };
 		9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580BB2C7E84E000B0089A /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningPhilosophersController.swift; sourceTree = "<group>"; };
 		9FB580B42C7E84E000B0089A /* threadsProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadsProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB580B72C7E84E000B0089A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FB580B92C7E84E000B0089A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FB390E32C7F74F800A22E72 /* chapter 1 */ = {
+			isa = PBXGroup;
+			children = (
+				9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */,
+			);
+			path = "chapter 1";
+			sourceTree = "<group>";
+		};
 		9FB580AB2C7E84E000B0089A = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		9FB580EF2C7E94E900B0089A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FB390E32C7F74F800A22E72 /* chapter 1 */,
 				9FB580F02C7E94F800B0089A /* testController */,
 			);
 			path = Controllers;
@@ -300,6 +311,7 @@
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
+				9FB390E52C7F767E00A22E72 /* diningPhilosophersController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

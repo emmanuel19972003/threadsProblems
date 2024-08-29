@@ -9,17 +9,20 @@ import UIKit
 
 enum ListOfProblems {
     case test
+    case philosopher
     func getController() -> ControllerProtocol {
         switch self {
         case .test:
             return testController()
+        case .philosopher:
+            return diningPhilosophersController()
         }
     }
 }
 
 class MasterController {
     
-    let problem: ListOfProblems = .test
+    let problem: ListOfProblems = .philosopher
     
     func setController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
