@@ -12,6 +12,9 @@ protocol ViewControllerProtocol: AnyObject {
     func setLabel1(Text: String)
     func setLabel2(Text: String)
     func setLabel3(Text: String)
+    func setLabel1Color(color: UIColor)
+    func setLabel2Color(color: UIColor)
+    func setLabel3Color(color: UIColor)
     func setBackground(color: UIColor)
 }
 
@@ -26,13 +29,13 @@ class ViewController: UIViewController, ViewControllerProtocol {
     
     var controller: ControllerProtocol?
     
-    @IBOutlet weak var label1: UILabel!
+    @IBOutlet private weak var label1: UILabel!
     
-    @IBOutlet weak var label2: UILabel!
+    @IBOutlet private weak var label2: UILabel!
     
-    @IBOutlet weak var label3: UILabel!
+    @IBOutlet private weak var label3: UILabel!
     
-    @IBOutlet var background: UIView!
+    @IBOutlet private var background: UIView!
     
     @IBAction func button1(_ sender: UIButton) {
         controller?.button1Tapped()
@@ -66,6 +69,24 @@ class ViewController: UIViewController, ViewControllerProtocol {
     func setLabel3(Text: String) {
         DispatchQueue.main.async { [weak self] in
             self?.label3.text = Text
+        }
+    }
+    
+    func setLabel1Color(color: UIColor) {
+        DispatchQueue.main.async { [weak self] in
+            self?.label1.backgroundColor = color
+        }
+    }
+    
+    func setLabel2Color(color: UIColor) {
+        DispatchQueue.main.async { [weak self] in
+            self?.label2.backgroundColor = color
+        }
+    }
+    
+    func setLabel3Color(color: UIColor) {
+        DispatchQueue.main.async { [weak self] in
+            self?.label3.backgroundColor = color
         }
     }
     

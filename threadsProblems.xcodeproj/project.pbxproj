@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674C852A2C84A2E300CBA90C /* diningPhilosophersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C85292C84A2E300CBA90C /* diningPhilosophersGame.swift */; };
 		9FB390E52C7F767E00A22E72 /* diningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */; };
 		9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B72C7E84E000B0089A /* AppDelegate.swift */; };
 		9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B92C7E84E000B0089A /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		674C85292C84A2E300CBA90C /* diningPhilosophersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningPhilosophersGame.swift; sourceTree = "<group>"; };
 		9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningPhilosophersController.swift; sourceTree = "<group>"; };
 		9FB580B42C7E84E000B0089A /* threadsProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadsProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB580B72C7E84E000B0089A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */,
+				674C85292C84A2E300CBA90C /* diningPhilosophersGame.swift */,
 			);
 			path = "chapter 1";
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
 				9FB390E52C7F767E00A22E72 /* diningPhilosophersController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
+				674C852A2C84A2E300CBA90C /* diningPhilosophersGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
