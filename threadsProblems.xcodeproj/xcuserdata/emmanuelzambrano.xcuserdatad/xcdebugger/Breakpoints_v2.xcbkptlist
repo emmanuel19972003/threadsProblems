@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FE042F47-C279-45EB-9F4A-9C26740AC6EF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA6E66D2-C86E-47FA-B0FF-9B8E316D01A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "threadsProblems/Controllers/chapter 1/diningPhilosophersGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "useChopStick()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BA6E66D2-C86E-47FA-B0FF-9B8E316D01A0 - f5b9d2c46cfe8e55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "threadsProblems.ChopStick.useChopStick() -&gt; ()"
+                  moduleName = "threadsProblems"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emmanuelzambrano/Desktop/threadsProblems/threadsProblems/Controllers/chapter%201/diningPhilosophersGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "BA6E66D2-C86E-47FA-B0FF-9B8E316D01A0 - f5b9d2c46cfe8ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "threadsProblems.ChopStick.useChopStick() -&gt; ()"
+                  moduleName = "threadsProblems"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emmanuelzambrano/Desktop/threadsProblems/threadsProblems/Controllers/chapter%201/diningPhilosophersGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62D4CF7E-4E57-4914-80E4-B72401F7CB30"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "threadsProblems/Controllers/chapter 1/diningPhilosophersGame.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "leaveChopStick()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "62D4CF7E-4E57-4914-80E4-B72401F7CB30 - de566711fedd2bd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "threadsProblems.ChopStick.leaveChopStick() -&gt; ()"
+                  moduleName = "threadsProblems"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emmanuelzambrano/Desktop/threadsProblems/threadsProblems/Controllers/chapter%201/diningPhilosophersGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "62D4CF7E-4E57-4914-80E4-B72401F7CB30 - de566711fedd2a49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "threadsProblems.ChopStick.leaveChopStick() -&gt; ()"
+                  moduleName = "threadsProblems"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emmanuelzambrano/Desktop/threadsProblems/threadsProblems/Controllers/chapter%201/diningPhilosophersGame.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DEC7C53D-5EBD-4875-A580-824762894F45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "threadsProblems/Controllers/chapter 1/diningPhilosophersController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "setLabelColor(id:color:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43A37183-76E2-48EA-A17C-45E78FA4F030"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "threadsProblems/Controllers/chapter 1/diningPhilosophersController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "setLabelColor(id:color:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

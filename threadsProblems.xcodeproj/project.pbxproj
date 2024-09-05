@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		674C852A2C84A2E300CBA90C /* diningPhilosophersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C85292C84A2E300CBA90C /* diningPhilosophersGame.swift */; };
-		9FB390E52C7F767E00A22E72 /* diningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */; };
+		674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */; };
+		9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */; };
 		9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B72C7E84E000B0089A /* AppDelegate.swift */; };
 		9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B92C7E84E000B0089A /* SceneDelegate.swift */; };
 		9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580BB2C7E84E000B0089A /* ViewController.swift */; };
@@ -20,6 +20,8 @@
 		9FB580DB2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */; };
 		9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580E92C7E8D0F00B0089A /* testController.swift */; };
 		9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580EB2C7E934C00B0089A /* MasterController.swift */; };
+		9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B512C8734490035F087 /* HolaProblem.swift */; };
+		9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B532C873E8F0035F087 /* stringExtencion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		674C85292C84A2E300CBA90C /* diningPhilosophersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningPhilosophersGame.swift; sourceTree = "<group>"; };
-		9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningPhilosophersController.swift; sourceTree = "<group>"; };
+		674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersGame.swift; sourceTree = "<group>"; };
+		9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersController.swift; sourceTree = "<group>"; };
 		9FB580B42C7E84E000B0089A /* threadsProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadsProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB580B72C7E84E000B0089A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FB580B92C7E84E000B0089A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threadsProblemsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FB580E92C7E8D0F00B0089A /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
 		9FB580EB2C7E934C00B0089A /* MasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
+		9FBD5B512C8734490035F087 /* HolaProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaProblem.swift; sourceTree = "<group>"; };
+		9FBD5B532C873E8F0035F087 /* stringExtencion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtencion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +91,8 @@
 		9FB390E32C7F74F800A22E72 /* chapter 1 */ = {
 			isa = PBXGroup;
 			children = (
-				9FB390E42C7F767E00A22E72 /* diningPhilosophersController.swift */,
-				674C85292C84A2E300CBA90C /* diningPhilosophersGame.swift */,
+				9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */,
+				674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */,
 			);
 			path = "chapter 1";
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 			children = (
 				9FB580ED2C7E94A300B0089A /* App Delegates */,
 				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
+				9FBD5B532C873E8F0035F087 /* stringExtencion.swift */,
 				9FB580EF2C7E94E900B0089A /* Controllers */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
 				9FB580C22C7E84E200B0089A /* LaunchScreen.storyboard */,
@@ -165,6 +170,7 @@
 		9FB580EF2C7E94E900B0089A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FBD5B4F2C8734270035F087 /* chapter 0 */,
 				9FB390E32C7F74F800A22E72 /* chapter 1 */,
 				9FB580F02C7E94F800B0089A /* testController */,
 			);
@@ -177,6 +183,22 @@
 				9FB580E92C7E8D0F00B0089A /* testController.swift */,
 			);
 			path = testController;
+			sourceTree = "<group>";
+		};
+		9FBD5B4F2C8734270035F087 /* chapter 0 */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD5B502C87343A0035F087 /* holaProblem */,
+			);
+			path = "chapter 0";
+			sourceTree = "<group>";
+		};
+		9FBD5B502C87343A0035F087 /* holaProblem */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD5B512C8734490035F087 /* HolaProblem.swift */,
+			);
+			path = holaProblem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */,
+				9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */,
+				9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */,
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
-				9FB390E52C7F767E00A22E72 /* diningPhilosophersController.swift in Sources */,
+				9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
-				674C852A2C84A2E300CBA90C /* diningPhilosophersGame.swift in Sources */,
+				674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

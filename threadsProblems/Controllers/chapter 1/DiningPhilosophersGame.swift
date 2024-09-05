@@ -1,5 +1,5 @@
 //
-//  diningPhilosophersGame.swift
+//  DiningPhilosophersGame.swift
 //  threadsProblems
 //
 //  Created by Emmanuel Zambrano Quitian on 9/1/24.
@@ -13,11 +13,11 @@ protocol PhilosopherGameProtocol {
 
 class PhilosopherGame {
     
-    var view: diningPhilosophersController
+    var view: DiningPhilosophersController
     
     let numberOfPhilosophers: Int
     
-    init(view: diningPhilosophersController, numberOfPhilosophers: Int) {
+    init(view: DiningPhilosophersController, numberOfPhilosophers: Int) {
         self.view = view
         self.numberOfPhilosophers = numberOfPhilosophers
     }
@@ -48,6 +48,7 @@ class Philosopher {
     var chopStickRight: ChopStick
     var chopStickLeft: ChopStick
     var delegate: PhilosopherGameProtocol
+    var counter = 0
     
     init(id: Int, chopStickRight: ChopStick, chopStickLeft: ChopStick, delegate: PhilosopherGameProtocol) {
         self.id = id
@@ -57,13 +58,16 @@ class Philosopher {
     }
     
     func dini() {
-        DispatchQueue.global().async { [weak self] in
-            self?.think()
-            self?.chopStickRight.useChopStick()
-            self?.chopStickLeft.useChopStick()
-            self?.eat()
-            self?.chopStickRight.leaveChopStick()
-            self?.chopStickLeft.leaveChopStick()
+        DispatchQueue.global().async {
+            while self.counter < 4 {
+                self.think()
+                self.chopStickRight.useChopStick()
+                self.chopStickLeft.useChopStick()
+                self.eat()
+                self.chopStickRight.leaveChopStick()
+                self.chopStickLeft.leaveChopStick()
+                self.counter += 1
+            }
         }
     }
     
@@ -72,7 +76,7 @@ class Philosopher {
         print("The \(ids) is thinking")
         delegate.setLabelColor(id: id, color: .red)
         Thread.sleep(forTimeInterval: TimeInterval(Int.random(in: 1...3)))
-        print("The \(ids)) is hungry")
+        print("The \(ids) is hungry")
     }
     
     private func eat() {
@@ -80,7 +84,7 @@ class Philosopher {
         print("The \(ids) is eat")
         delegate.setLabelColor(id: id, color: .green)
         Thread.sleep(forTimeInterval: TimeInterval(Int.random(in: 1...3)))
-        print("The \(ids)) is done eat")
+        print("The \(ids) is done eat")
     }
 }
 

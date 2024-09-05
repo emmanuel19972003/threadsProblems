@@ -29,11 +29,29 @@ class ViewController: UIViewController, ViewControllerProtocol {
     
     var controller: ControllerProtocol?
     
-    @IBOutlet private weak var label1: UILabel!
+    @IBOutlet private weak var label1: UILabel! {
+        didSet {
+            label1.layer.cornerRadius = 5
+            label1.layer.borderColor = UIColor.black.cgColor
+            label1.layer.borderWidth = 0.5
+        }
+    }
     
-    @IBOutlet private weak var label2: UILabel!
+    @IBOutlet private weak var label2: UILabel! {
+        didSet {
+            label2.layer.cornerRadius = 5
+            label2.layer.borderColor = UIColor.black.cgColor
+            label2.layer.borderWidth = 0.5
+        }
+    }
     
-    @IBOutlet private weak var label3: UILabel!
+    @IBOutlet private weak var label3: UILabel! {
+        didSet {
+            label3.layer.cornerRadius = 5
+            label3.layer.borderColor = UIColor.black.cgColor
+            label3.layer.borderWidth = 0.5
+        }
+    }
     
     @IBOutlet private var background: UIView!
     
