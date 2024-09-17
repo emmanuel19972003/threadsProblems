@@ -23,9 +23,33 @@ enum ListOfProblems {
     }
 }
 
+enum ListOfCustomProblemsProblems {
+    case lightsProblem
+    
+    func getId() -> String{
+        switch self {
+        case .lightsProblem:
+            "lightsProblem"
+        }
+    }
+    
+    func getControllerID() -> String {
+        "lightsProblemController"
+    }
+}
+
 class MasterController {
     
     let problem: ListOfProblems = .hola
+    
+    let customProblem: ListOfCustomProblemsProblems? = nil
+    
+    func setMainController() -> UINavigationController {
+        if let customProblem = customProblem {
+            return customViewProblem()
+        }
+        return setController()
+    }
     
     func setController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -36,6 +60,18 @@ class MasterController {
             controller.view = viewController
         }
         let navigationController = UINavigationController(rootViewController: viewController)
+        return navigationController
+    }
+    
+    func customViewProblem() -> UINavigationController {
+        guard let customProblem = customProblem else {
+            return  UINavigationController()
+        }
+        let storyboard = UIStoryboard(name: customProblem.getId(), bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: customProblem.getControllerID())
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        
         return navigationController
     }
 }

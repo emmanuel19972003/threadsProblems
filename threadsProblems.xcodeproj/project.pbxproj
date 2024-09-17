@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */; };
+		9F0C8A992C99CFE50098E45E /* lightsProblem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */; };
+		9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA129A32C9A153800968FF6 /* lightsProblemController.swift */; };
 		9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */; };
 		9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B72C7E84E000B0089A /* AppDelegate.swift */; };
 		9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B92C7E84E000B0089A /* SceneDelegate.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersGame.swift; sourceTree = "<group>"; };
+		9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lightsProblem.storyboard; sourceTree = "<group>"; };
+		9FA129A32C9A153800968FF6 /* lightsProblemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightsProblemController.swift; sourceTree = "<group>"; };
 		9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersController.swift; sourceTree = "<group>"; };
 		9FB580B42C7E84E000B0089A /* threadsProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadsProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB580B72C7E84E000B0089A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F0C8A932C99C85A0098E45E /* other Problems */ = {
+			isa = PBXGroup;
+			children = (
+				9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */,
+				9FA129A32C9A153800968FF6 /* lightsProblemController.swift */,
+			);
+			path = "other Problems";
+			sourceTree = "<group>";
+		};
 		9FB390E32C7F74F800A22E72 /* chapter 1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +136,7 @@
 				9FB580ED2C7E94A300B0089A /* App Delegates */,
 				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
 				9FBD5B532C873E8F0035F087 /* stringExtencion.swift */,
+				9F0C8A932C99C85A0098E45E /* other Problems */,
 				9FB580EF2C7E94E900B0089A /* Controllers */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
 				9FB580C22C7E84E200B0089A /* LaunchScreen.storyboard */,
@@ -308,6 +322,7 @@
 				9FB580C42C7E84E200B0089A /* LaunchScreen.storyboard in Resources */,
 				9FB580C12C7E84E100B0089A /* Assets.xcassets in Resources */,
 				9FB580BF2C7E84E000B0089A /* Main.storyboard in Resources */,
+				9F0C8A992C99CFE50098E45E /* lightsProblem.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +353,7 @@
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
+				9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */,
 				9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
 				674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */,
