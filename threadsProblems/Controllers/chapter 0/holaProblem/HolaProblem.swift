@@ -13,7 +13,8 @@ class HolaProblemController: ControllerProtocol {
     var result = ""
     var holaProblem = HolaProblem()
     func button1Tapped() {
-        holaProblem.play()
+        let result = holaProblem.play()
+        view?.setLabel1(Text: result)
     }
     
     func button2Tapped() {
@@ -29,18 +30,22 @@ class HolaProblemController: ControllerProtocol {
 class HolaProblem {
     
     private var result = ""
-    
-    func play() {
+    @discardableResult
+    func play() -> String{
         let hola = "hello world"
         result = String(repeating: " ", count: hola.count)
-        
+        let group = DispatchGroup()
         for (n, c) in hola.enumerated() {
+            group.enter()
             DispatchQueue.global().async {
                 Thread.sleep(forTimeInterval: TimeInterval(Int.random(in: 0...2)))
                 print(c)
                 self.result.replaceCharacter(at: n, with: c)
+                group.leave()
             }
         }
+        group.wait()
+        return result
     }
     
     func getResult() -> String {

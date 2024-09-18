@@ -9,8 +9,10 @@ import UIKit
 
 class lightsProblemController: UIViewController {
     
+    let queue = DispatchQueue(label: "semaforo")
+    
     @IBAction func singleThread(_ sender: UIButton) {
-        DispatchQueue.main.async {
+        queue.async {
             self.semaforo()
         }
     }

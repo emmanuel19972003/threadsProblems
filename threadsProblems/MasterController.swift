@@ -42,13 +42,14 @@ class MasterController {
     
     let problem: ListOfProblems = .hola
     
-    let customProblem: ListOfCustomProblemsProblems? = nil
+    let customProblem: ListOfCustomProblemsProblems? = .lightsProblem
     
     func setMainController() -> UINavigationController {
-        if let customProblem = customProblem {
-            return customViewProblem()
+        guard let customProblem else {
+            return setController()
         }
-        return setController()
+        return customViewProblem()
+        
     }
     
     func setController() -> UINavigationController {
