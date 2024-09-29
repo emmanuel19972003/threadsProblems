@@ -11,6 +11,8 @@ enum ListOfProblems {
     case test
     case hola
     case philosopher
+    case bankProblem
+    case bankProblemConditionLock
     func getController() -> ControllerProtocol {
         switch self {
         case .test:
@@ -19,20 +21,22 @@ enum ListOfProblems {
             return HolaProblemController()
         case .philosopher:
             return DiningPhilosophersController()
+        case .bankProblem:
+            return bankProblemController()
+        case .bankProblemConditionLock:
+            return bankProblemConditionLockController()
         }
     }
 }
 
 enum ListOfCustomProblemsProblems {
     case lightsProblem
-    
     func getId() -> String{
         switch self {
         case .lightsProblem:
             "lightsProblem"
         }
     }
-    
     func getControllerID() -> String {
         "lightsProblemController"
     }
@@ -40,12 +44,12 @@ enum ListOfCustomProblemsProblems {
 
 class MasterController {
     
-    let problem: ListOfProblems = .hola
+    let problem: ListOfProblems = .bankProblemConditionLock
     
-    let customProblem: ListOfCustomProblemsProblems? = .lightsProblem
+    let customProblem: ListOfCustomProblemsProblems? = nil
     
     func setMainController() -> UINavigationController {
-        guard let customProblem else {
+        guard customProblem != nil else {
             return setController()
         }
         return customViewProblem()

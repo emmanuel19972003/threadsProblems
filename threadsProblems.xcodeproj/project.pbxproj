@@ -24,6 +24,8 @@
 		9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580EB2C7E934C00B0089A /* MasterController.swift */; };
 		9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B512C8734490035F087 /* HolaProblem.swift */; };
 		9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B532C873E8F0035F087 /* stringExtencion.swift */; };
+		9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9D2CA5A181001B4964 /* bankProblem.swift */; };
+		9FC69DA02CA5A435001B4964 /* bankProblemConditionLockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		9FB580EB2C7E934C00B0089A /* MasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
 		9FBD5B512C8734490035F087 /* HolaProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaProblem.swift; sourceTree = "<group>"; };
 		9FBD5B532C873E8F0035F087 /* stringExtencion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtencion.swift; sourceTree = "<group>"; };
+		9FC69D9D2CA5A181001B4964 /* bankProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblem.swift; sourceTree = "<group>"; };
+		9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblemConditionLockController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,7 @@
 		9F0C8A932C99C85A0098E45E /* other Problems */ = {
 			isa = PBXGroup;
 			children = (
-				9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */,
-				9FA129A32C9A153800968FF6 /* lightsProblemController.swift */,
+				9FC69D9B2CA5A153001B4964 /* lightsProblem */,
 			);
 			path = "other Problems";
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 		9FBD5B4F2C8734270035F087 /* chapter 0 */ = {
 			isa = PBXGroup;
 			children = (
+				9FC69D9C2CA5A160001B4964 /* banck Problem */,
 				9FBD5B502C87343A0035F087 /* holaProblem */,
 			);
 			path = "chapter 0";
@@ -213,6 +217,24 @@
 				9FBD5B512C8734490035F087 /* HolaProblem.swift */,
 			);
 			path = holaProblem;
+			sourceTree = "<group>";
+		};
+		9FC69D9B2CA5A153001B4964 /* lightsProblem */ = {
+			isa = PBXGroup;
+			children = (
+				9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */,
+				9FA129A32C9A153800968FF6 /* lightsProblemController.swift */,
+			);
+			path = lightsProblem;
+			sourceTree = "<group>";
+		};
+		9FC69D9C2CA5A160001B4964 /* banck Problem */ = {
+			isa = PBXGroup;
+			children = (
+				9FC69D9D2CA5A181001B4964 /* bankProblem.swift */,
+				9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */,
+			);
+			path = "banck Problem";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +372,8 @@
 				9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */,
 				9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */,
 				9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */,
+				9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */,
+				9FC69DA02CA5A435001B4964 /* bankProblemConditionLockController.swift in Sources */,
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
