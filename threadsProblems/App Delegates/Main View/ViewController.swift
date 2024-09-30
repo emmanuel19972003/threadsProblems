@@ -28,7 +28,7 @@ protocol ControllerProtocol: AnyObject {
 class ViewController: UIViewController, ViewControllerProtocol {
     
     var controller: ControllerProtocol?
-    
+     
     @IBOutlet private weak var label1: UILabel! {
         didSet {
             label1.layer.cornerRadius = 5

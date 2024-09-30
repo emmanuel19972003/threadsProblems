@@ -8,28 +8,6 @@
 import Foundation
 
 @propertyWrapper
-final public class Atomic<Value> {
-    private let queue = DispatchQueue(label: "com.luka.atomic", qos: .userInitiated)
-    private var value: Value
-    
-    public init(wrappedValue: Value) {
-        self.value = wrappedValue
-    }
-    
-    public var wrappedValue: Value {
-        get {
-            queue.sync { value }
-        }
-        set {
-            queue.sync { value = newValue }
-        }
-    }
-    
-    public func mutate(_ mutation: (inout Value) -> Void) {
-        return queue.sync { mutation(&value) }
-    }
-}
-@propertyWrapper
 struct printProperty<Value> {
     var value: Value
     
@@ -52,6 +30,54 @@ struct printProperty<Value> {
 }
 
 @propertyWrapper
+class OnMainThread<Value> {
+    private var _value: Value
+    
+    init(wrappedValue: Value) {
+        self._value = wrappedValue
+    }
+    
+    var wrappedValue: Value {
+        get {
+            return DispatchQueue.main.sync {
+                return _value
+            }
+        }
+        set {
+            DispatchQueue.main.sync {
+                self._value = newValue
+            }
+        }
+    }
+}
+
+@propertyWrapper
+public struct WeakOnMainThread<Wrapped: AnyObject> {
+    private weak var value: AnyObject?
+
+    public init(_ value: Wrapped? = nil) {
+        
+            self.value = value
+        
+    }
+
+    public var wrappedValue: Wrapped? {
+        get {
+            DispatchQueue.main.sync {
+                value as? Wrapped
+            }
+            
+        }
+        set {
+            DispatchQueue.main.sync {
+                value = newValue
+            }
+        }
+    }
+}
+
+
+@propertyWrapper
 struct Capitalized {
     private var value: String = ""
 
@@ -64,8 +90,3 @@ struct Capitalized {
         self.wrappedValue = wrappedValue
     }
 }
-
-struct Persona {
-    @Capitalized var nombre: String
-}
-
