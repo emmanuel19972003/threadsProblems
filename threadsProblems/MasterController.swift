@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum ListOfProblems {
+enum ListOfProblems: String {
     case test
     case hola
     case philosopher
@@ -59,6 +59,7 @@ class MasterController {
     func setController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
+        viewController.title = problem.rawValue
         if let viewController = viewController as? ViewControllerProtocol {
             let controller = problem.getController()
             viewController.controller = controller

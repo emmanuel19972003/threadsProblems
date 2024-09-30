@@ -15,6 +15,8 @@ class bankProblemConditionLockController: ControllerProtocol {
     
     var balance: Int = 10
     
+    @printProperty var printBalance: Int = 5
+    
     func button1Tapped() {
         DispatchQueue.global().async {
             self.changeBalance(amount: 10)
@@ -23,17 +25,19 @@ class bankProblemConditionLockController: ControllerProtocol {
     }
     
     func button2Tapped() {
-        DispatchQueue.global().async {
-            self.changeBalance(amount: -5)
-            self.view?.setLabel1(Text: "\(self.balance)")
-        }
+//        DispatchQueue.global().async {
+//            self.changeBalance(amount: -5)
+//            self.view?.setLabel1(Text: "\(self.balance)")
+//        }
+        printBalance = 10
     }
     
     func button3Tapped() {
-        DispatchQueue.global().async {
-            self.increaseBalance(amount: 5)
-            self.view?.setLabel1(Text: "\(self.balance)")
-        }
+//        DispatchQueue.global().async {
+//            self.increaseBalance(amount: 5)
+//            self.view?.setLabel1(Text: "\(self.balance)")
+//        }
+        let dasd = printBalance
     }
     
     func changeBalance(amount: Int) {
