@@ -27,6 +27,7 @@
 		9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B532C873E8F0035F087 /* stringExtencion.swift */; };
 		9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9D2CA5A181001B4964 /* bankProblem.swift */; };
 		9FC69DA02CA5A435001B4964 /* bankProblemConditionLockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */; };
+		9FE8AE7F2CADA0E40081DD80 /* MasterControllerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		9FBD5B532C873E8F0035F087 /* stringExtencion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtencion.swift; sourceTree = "<group>"; };
 		9FC69D9D2CA5A181001B4964 /* bankProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblem.swift; sourceTree = "<group>"; };
 		9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblemConditionLockController.swift; sourceTree = "<group>"; };
+		9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterControllerEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				9FB580ED2C7E94A300B0089A /* App Delegates */,
+				9FE8AE802CADA1260081DD80 /* extencions */,
+				9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */,
 				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
-				9FBD5B532C873E8F0035F087 /* stringExtencion.swift */,
-				670E94DB2CAA1A5B005EE2C3 /* propertyWrapper.swift */,
 				9F0C8A932C99C85A0098E45E /* other Problems */,
 				9FB580EF2C7E94E900B0089A /* Controllers */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
@@ -238,6 +240,15 @@
 				9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */,
 			);
 			path = "banck Problem";
+			sourceTree = "<group>";
+		};
+		9FE8AE802CADA1260081DD80 /* extencions */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD5B532C873E8F0035F087 /* stringExtencion.swift */,
+				670E94DB2CAA1A5B005EE2C3 /* propertyWrapper.swift */,
+			);
+			path = extencions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +396,7 @@
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
 				670E94DC2CAA1A5B005EE2C3 /* propertyWrapper.swift in Sources */,
 				674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */,
+				9FE8AE7F2CADA0E40081DD80 /* MasterControllerEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

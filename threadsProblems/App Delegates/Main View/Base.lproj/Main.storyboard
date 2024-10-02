@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -67,14 +67,33 @@
                                     <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqd-yJ-Edm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klU-Tb-PwO">
+                                <rect key="frame" x="159" y="447" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nch-av-jn3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbN-Oe-HQX">
+                                <rect key="frame" x="159" y="502" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="button5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMh-MY-OOy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q59-EA-lRC" secondAttribute="trailing" constant="20" id="1Ps-SB-WtU"/>
+                            <constraint firstItem="klU-Tb-PwO" firstAttribute="top" secondItem="YtM-gn-JUn" secondAttribute="bottom" constant="20" id="23w-kB-eY9"/>
                             <constraint firstItem="4Dg-7Q-Doc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZJ-T0-SWm"/>
                             <constraint firstItem="W0y-Yo-e5S" firstAttribute="top" secondItem="4Dg-7Q-Doc" secondAttribute="bottom" constant="20" id="Csk-El-mRp"/>
                             <constraint firstItem="dne-h4-z4b" firstAttribute="top" secondItem="Q59-EA-lRC" secondAttribute="bottom" constant="50" id="Dr5-Kc-zef"/>
+                            <constraint firstItem="jbN-Oe-HQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GgP-jH-gkM"/>
+                            <constraint firstItem="klU-Tb-PwO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N0a-oq-rAu"/>
                             <constraint firstItem="W0y-Yo-e5S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NbH-Wj-H9M"/>
                             <constraint firstItem="4Dg-7Q-Doc" firstAttribute="top" secondItem="dne-h4-z4b" secondAttribute="bottom" constant="50" id="S9d-Pk-9IX"/>
                             <constraint firstItem="YtM-gn-JUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WFb-OK-vOP"/>
@@ -86,6 +105,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="raS-2A-n3k" secondAttribute="trailing" constant="20" id="iLX-hu-ghR"/>
                             <constraint firstItem="raS-2A-n3k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="kGr-4R-Krx"/>
                             <constraint firstItem="dne-h4-z4b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="o2t-xZ-9QL"/>
+                            <constraint firstItem="jbN-Oe-HQX" firstAttribute="top" secondItem="klU-Tb-PwO" secondAttribute="bottom" constant="20" id="yCp-xa-df2"/>
                         </constraints>
                     </view>
                     <connections>

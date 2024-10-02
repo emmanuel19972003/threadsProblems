@@ -60,7 +60,6 @@ public struct WeakOnMainThread<Wrapped: AnyObject> {
             self.value = value
         
     }
-
     public var wrappedValue: Wrapped? {
         get {
             DispatchQueue.main.sync {

@@ -7,46 +7,11 @@
 
 import UIKit
 
-enum ListOfProblems: String {
-    case test
-    case hola
-    case philosopher
-    case bankProblem
-    case bankProblemConditionLock
-    func getController() -> ControllerProtocol {
-        switch self {
-        case .test:
-            return testController()
-        case .hola:
-            return HolaProblemController()
-        case .philosopher:
-            return DiningPhilosophersController()
-        case .bankProblem:
-            return bankProblemController()
-        case .bankProblemConditionLock:
-            return bankProblemConditionLockController()
-        }
-    }
-}
-
-enum ListOfCustomProblemsProblems {
-    case lightsProblem
-    func getId() -> String{
-        switch self {
-        case .lightsProblem:
-            "lightsProblem"
-        }
-    }
-    func getControllerID() -> String {
-        "lightsProblemController"
-    }
-}
-
 class MasterController {
     
-    let problem: ListOfProblems = .bankProblemConditionLock
+    let problem: ListOfProblems = selectedProblem().problem
     
-    let customProblem: ListOfCustomProblemsProblems? = nil
+    let customProblem: ListOfCustomProblemsProblems? = selectedProblem().customProblem
     
     func setMainController() -> UINavigationController {
         guard customProblem != nil else {

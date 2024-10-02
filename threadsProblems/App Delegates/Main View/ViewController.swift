@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol ControllerExtendedProtocol: ControllerProtocol {
+    func button4Tapped()
+    func button5Tapped()
+}
+
 protocol ViewControllerProtocol: AnyObject {
     var controller: ControllerProtocol? {get set}
     func setLabel1(Text: String)
@@ -65,6 +70,24 @@ class ViewController: UIViewController, ViewControllerProtocol {
     
     @IBAction func button3(_ sender: Any) {
         controller?.button3Tapped()
+    }
+    
+    
+    @IBAction func button4(_ sender: Any) {
+        guard let controller = controller as? ControllerExtendedProtocol else {
+            setLabel1(Text: "Action not set use ControllerExtendedProtocol")
+            return
+        }
+        controller.button4Tapped()
+    }
+    
+    
+    @IBAction func button5(_ sender: Any) {
+        guard let controller = controller as? ControllerExtendedProtocol else {
+            setLabel2(Text: "Action not set use ControllerExtendedProtocol")
+            return
+        }
+        controller.button5Tapped()
     }
     
     override func viewDidLoad() {
