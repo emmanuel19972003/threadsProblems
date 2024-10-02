@@ -100,12 +100,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F0C8A932C99C85A0098E45E /* other Problems */ = {
+		9F0C8A932C99C85A0098E45E /* custom View Problems */ = {
 			isa = PBXGroup;
 			children = (
 				9FC69D9B2CA5A153001B4964 /* lightsProblem */,
 			);
-			path = "other Problems";
+			path = "custom View Problems";
 			sourceTree = "<group>";
 		};
 		9FB390E32C7F74F800A22E72 /* chapter 1 */ = {
@@ -144,8 +144,8 @@
 				9FE8AE802CADA1260081DD80 /* extencions */,
 				9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */,
 				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
-				9F0C8A932C99C85A0098E45E /* other Problems */,
 				9FB580EF2C7E94E900B0089A /* Controllers */,
+				9F0C8A932C99C85A0098E45E /* custom View Problems */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
 				9FB580C22C7E84E200B0089A /* LaunchScreen.storyboard */,
 				9FB580C52C7E84E200B0089A /* Info.plist */,

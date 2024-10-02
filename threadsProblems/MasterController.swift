@@ -20,8 +20,12 @@ class MasterController {
         return customViewProblem()
         
     }
-    
-    func setController() -> UINavigationController {
+}
+
+extension MasterController {
+    //MARK: private func
+    //MARK: - regular controller
+    private func setController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
         viewController.title = problem.rawValue
@@ -33,8 +37,8 @@ class MasterController {
         let navigationController = UINavigationController(rootViewController: viewController)
         return navigationController
     }
-    
-    func customViewProblem() -> UINavigationController {
+    //MARK: - custom controller
+    private func customViewProblem() -> UINavigationController {
         guard let customProblem = customProblem else {
             return  UINavigationController()
         }
@@ -45,4 +49,5 @@ class MasterController {
         
         return navigationController
     }
+    
 }
