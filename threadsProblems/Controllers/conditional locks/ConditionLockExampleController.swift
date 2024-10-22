@@ -51,7 +51,7 @@ class ConditionLockExampleController: ControllerProtocol {
     
     func button3Tapped() {
         DispatchQueue.global().async { [weak self] in
-            print(self?.items)
+            print(self?.items ?? "")
         }
     }
     

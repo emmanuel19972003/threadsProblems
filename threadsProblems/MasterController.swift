@@ -23,7 +23,6 @@ class MasterController {
 }
 
 extension MasterController {
-    //MARK: private func
     //MARK: - regular controller
     private func setController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

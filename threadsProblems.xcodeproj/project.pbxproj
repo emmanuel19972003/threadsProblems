@@ -27,6 +27,7 @@
 		9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B532C873E8F0035F087 /* stringExtencion.swift */; };
 		9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9D2CA5A181001B4964 /* bankProblem.swift */; };
 		9FC69DA02CA5A435001B4964 /* bankProblemConditionLockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */; };
+		9FDA61522CC7FE4F00C16E73 /* CancelableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDA61512CC7FE4F00C16E73 /* CancelableTask.swift */; };
 		9FE8AE7F2CADA0E40081DD80 /* MasterControllerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */; };
 		9FE8AE832CADBA810081DD80 /* ConditionLockExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8AE822CADBA810081DD80 /* ConditionLockExampleController.swift */; };
 		9FE8AE852CADBF120081DD80 /* HolaConditionLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8AE842CADBF120081DD80 /* HolaConditionLock.swift */; };
@@ -74,6 +75,7 @@
 		9FBD5B532C873E8F0035F087 /* stringExtencion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtencion.swift; sourceTree = "<group>"; };
 		9FC69D9D2CA5A181001B4964 /* bankProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblem.swift; sourceTree = "<group>"; };
 		9FC69D9F2CA5A435001B4964 /* bankProblemConditionLockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblemConditionLockController.swift; sourceTree = "<group>"; };
+		9FDA61512CC7FE4F00C16E73 /* CancelableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelableTask.swift; sourceTree = "<group>"; };
 		9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterControllerEntity.swift; sourceTree = "<group>"; };
 		9FE8AE822CADBA810081DD80 /* ConditionLockExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionLockExampleController.swift; sourceTree = "<group>"; };
 		9FE8AE842CADBF120081DD80 /* HolaConditionLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaConditionLock.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		9FB580EF2C7E94E900B0089A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FDA61502CC7FE3700C16E73 /* Cancelabel */,
 				9FE8AE812CADBA650081DD80 /* conditional locks */,
 				9FC69D9C2CA5A160001B4964 /* banck Problem */,
 				9FBD5B502C87343A0035F087 /* holaProblem */,
@@ -236,6 +239,14 @@
 				9FC69D9D2CA5A181001B4964 /* bankProblem.swift */,
 			);
 			path = "banck Problem";
+			sourceTree = "<group>";
+		};
+		9FDA61502CC7FE3700C16E73 /* Cancelabel */ = {
+			isa = PBXGroup;
+			children = (
+				9FDA61512CC7FE4F00C16E73 /* CancelableTask.swift */,
+			);
+			path = Cancelabel;
 			sourceTree = "<group>";
 		};
 		9FE8AE802CADA1260081DD80 /* extencions */ = {
@@ -398,6 +409,7 @@
 				9FE8AE852CADBF120081DD80 /* HolaConditionLock.swift in Sources */,
 				9FE8AE832CADBA810081DD80 /* ConditionLockExampleController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
+				9FDA61522CC7FE4F00C16E73 /* CancelableTask.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
 				9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */,
 				9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */,
