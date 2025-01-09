@@ -24,7 +24,6 @@ class CancelableTaskController: ControllerProtocol {
                 Thread.sleep(forTimeInterval: 0.5)
             }
             print("Done Running")
-            
         }
         DispatchQueue.global().async(execute: cancelableTask)
     }
@@ -34,6 +33,19 @@ class CancelableTaskController: ControllerProtocol {
     }
     
     func button3Tapped() {
-        print("Algo ")
+        cancelableTask = DispatchWorkItem { [weak self] in
+            var counter = 0
+            guard let self = self else {return}
+            for _ in 0...10 {
+                self.view?.setLabel1(Text: "\(counter)")
+                counter += 1
+                Thread.sleep(forTimeInterval: 0.5)
+            }
+        }
+        let queue =  DispatchQueue.global()
+        queue.async(execute: cancelableTask)
+        cancelableTask.notify(queue: queue, execute: DispatchWorkItem(block: { [weak self] in
+            self?.view?.setLabel3(Text: "Done")
+        }))
     }
 }
