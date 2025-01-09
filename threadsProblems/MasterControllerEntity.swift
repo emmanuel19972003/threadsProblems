@@ -8,7 +8,7 @@
 import Foundation
 
 struct selectedProblem {
-    let problem: ListOfProblems = .cancelableTask
+    let problem: ListOfProblems = .bankActorProblem
     let customProblem: ListOfCustomProblemsProblems? = nil
 }
 
@@ -21,6 +21,7 @@ enum ListOfProblems: String {
     case ConditionLockExample
     case HolaConditionLock
     case cancelableTask
+    case bankActorProblem
     func getController() -> ControllerProtocol {
         switch self {
         case .test:
@@ -39,6 +40,8 @@ enum ListOfProblems: String {
             HolaConditionLockController()
         case .cancelableTask:
             CancelableTaskController()
+        case .bankActorProblem:
+            BankActorProblem()
         }
     }
 }
