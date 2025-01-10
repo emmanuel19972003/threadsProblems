@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DiningPhilosophersController: ControllerProtocol {
+final class DiningPhilosophersController: ControllerProtocol {
     
     var view: ViewControllerProtocol?
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HolaProblemController: ControllerProtocol {
+final class HolaProblemController: ControllerProtocol {
     
     var view: ViewControllerProtocol?
     var result = ""

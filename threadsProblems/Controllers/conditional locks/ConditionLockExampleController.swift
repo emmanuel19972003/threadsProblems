@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ConditionLockExampleController: ControllerProtocol {
+final class ConditionLockExampleController: ControllerProtocol {
     
     private var items: [Int] = []
     private let conditionLock = NSConditionLock(condition: 0)

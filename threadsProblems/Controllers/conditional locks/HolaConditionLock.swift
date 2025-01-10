@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HolaConditionLockController: ControllerProtocol {
+final class HolaConditionLockController: ControllerProtocol {
     var view: (any ViewControllerProtocol)?
     
     func button1Tapped() {

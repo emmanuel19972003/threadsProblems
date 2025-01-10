@@ -13,6 +13,7 @@ final class BankActorProblem: ControllerProtocol {
     
     func button1Tapped() {
         Task {
+            print("button 1")
             await account.increaseBalance(amount: 10.0)
             let balance = await account.balance
             view?.setLabel1(Text: "\(balance)")
@@ -21,6 +22,7 @@ final class BankActorProblem: ControllerProtocol {
     
     func button2Tapped() {
         Task {
+            print("button 2")
             await account.decreesBalance(amount: 5.0)
             let balance = await account.balance
             view?.setLabel1(Text: "\(balance)")
@@ -29,10 +31,9 @@ final class BankActorProblem: ControllerProtocol {
     
     func button3Tapped() {
         Task {
+            print("button 3")
             let balance = await account.balance
-            view?.setLabel1(Text: "\(balance)")
+            view?.setLabel3(Text: "\(balance)")
         }
     }
-    
-    
 }

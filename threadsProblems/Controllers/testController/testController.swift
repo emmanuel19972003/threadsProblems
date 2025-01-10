@@ -7,7 +7,7 @@
 
 import Foundation
 
-class testController: ControllerProtocol {
+final class testController: ControllerProtocol {
     var view: ViewControllerProtocol?
     
     func button1Tapped() {
@@ -26,6 +26,4 @@ class testController: ControllerProtocol {
         print("Emma 3")
         view?.setLabel3(Text: "set 3")
     }
-    
-    
 }

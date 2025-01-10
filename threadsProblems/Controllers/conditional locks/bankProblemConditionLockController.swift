@@ -7,7 +7,7 @@
 
 import Foundation
 
-class conditionLockPlaygroundController: ControllerExtendedProtocol {
+final class conditionLockPlaygroundController: ControllerExtendedProtocol {
     
     var view: ViewControllerProtocol?
     

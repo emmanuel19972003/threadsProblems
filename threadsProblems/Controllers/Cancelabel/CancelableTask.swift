@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CancelableTaskController: ControllerProtocol {
+final class CancelableTaskController: ControllerProtocol {
     var view: (any ViewControllerProtocol)?
     
     var cancelableTask = DispatchWorkItem {}

@@ -7,12 +7,15 @@
 
 import Foundation
 
-actor BankActor {
+final actor BankActor {
     
     var balance: Float
     
-    init(balance: Float = 0.0) {
+    var balance2: Float
+    
+    init(balance: Float = 0.0, balance2: Float = 0.0) {
         self.balance = balance
+        self.balance2 = balance2
     }
     
     func increaseBalance(amount: Float) {
@@ -21,9 +24,18 @@ actor BankActor {
     }
     
     func decreesBalance(amount: Float) {
+        print("Entro")
         if balance >= amount {
             Thread.sleep(forTimeInterval: 3)
             balance -= amount
+        }
+    }
+    
+    func decreesBalance2(amount: Float) {
+        print("Entro")
+        if balance2 >= amount {
+            Thread.sleep(forTimeInterval: 3)
+            balance2 -= amount
         }
     }
     

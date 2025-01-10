@@ -30,7 +30,7 @@ protocol ControllerProtocol: AnyObject {
     func button3Tapped()
 }
 
-class ViewController: UIViewController, ViewControllerProtocol {
+final class ViewController: UIViewController, ViewControllerProtocol {
     
     var controller: ControllerProtocol?
      

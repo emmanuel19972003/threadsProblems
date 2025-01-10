@@ -12,6 +12,8 @@
 		9F0C8A992C99CFE50098E45E /* lightsProblem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */; };
 		9F6D94A52D300D000030B198 /* BankActorProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A42D300D000030B198 /* BankActorProblem.swift */; };
 		9F6D94A72D300D7A0030B198 /* BankActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A62D300D7A0030B198 /* BankActor.swift */; };
+		9F6D94A92D31594F0030B198 /* ScoreGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A82D31594F0030B198 /* ScoreGame.swift */; };
+		9F6D94AB2D3159760030B198 /* ScoreGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94AA2D3159760030B198 /* ScoreGameViewController.swift */; };
 		9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA129A32C9A153800968FF6 /* lightsProblemController.swift */; };
 		9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */; };
 		9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B72C7E84E000B0089A /* AppDelegate.swift */; };
@@ -58,6 +60,8 @@
 		9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lightsProblem.storyboard; sourceTree = "<group>"; };
 		9F6D94A42D300D000030B198 /* BankActorProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankActorProblem.swift; sourceTree = "<group>"; };
 		9F6D94A62D300D7A0030B198 /* BankActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankActor.swift; sourceTree = "<group>"; };
+		9F6D94A82D31594F0030B198 /* ScoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGame.swift; sourceTree = "<group>"; };
+		9F6D94AA2D3159760030B198 /* ScoreGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGameViewController.swift; sourceTree = "<group>"; };
 		9FA129A32C9A153800968FF6 /* lightsProblemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightsProblemController.swift; sourceTree = "<group>"; };
 		9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersController.swift; sourceTree = "<group>"; };
 		9FB580B42C7E84E000B0089A /* threadsProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadsProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,15 @@
 			path = BnackActorProblem;
 			sourceTree = "<group>";
 		};
+		9F6D94AC2D31597C0030B198 /* ScoreGame */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D94A82D31594F0030B198 /* ScoreGame.swift */,
+				9F6D94AA2D3159760030B198 /* ScoreGameViewController.swift */,
+			);
+			path = ScoreGame;
+			sourceTree = "<group>";
+		};
 		9FB390E32C7F74F800A22E72 /* DiningPhilosophersGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +175,6 @@
 				9FB580ED2C7E94A300B0089A /* App Delegates */,
 				9FE8AE802CADA1260081DD80 /* extencions */,
 				9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */,
-				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
 				9FB580EF2C7E94E900B0089A /* Controllers */,
 				9F0C8A932C99C85A0098E45E /* custom View Problems */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
@@ -202,6 +214,7 @@
 		9FB580EE2C7E94D800B0089A /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
 				9FB580BB2C7E84E000B0089A /* ViewController.swift */,
 				9FB580BD2C7E84E000B0089A /* Main.storyboard */,
 			);
@@ -218,6 +231,7 @@
 				9FBD5B502C87343A0035F087 /* holaProblem */,
 				9FB390E32C7F74F800A22E72 /* DiningPhilosophersGame */,
 				9FB580F02C7E94F800B0089A /* testController */,
+				9F6D94AC2D31597C0030B198 /* ScoreGame */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -418,6 +432,7 @@
 				9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */,
 				9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */,
 				9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */,
+				9F6D94A92D31594F0030B198 /* ScoreGame.swift in Sources */,
 				9FC69DA02CA5A435001B4964 /* bankProblemConditionLockController.swift in Sources */,
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FE8AE852CADBF120081DD80 /* HolaConditionLock.swift in Sources */,
@@ -432,6 +447,7 @@
 				670E94DC2CAA1A5B005EE2C3 /* propertyWrapper.swift in Sources */,
 				674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */,
 				9FE8AE7F2CADA0E40081DD80 /* MasterControllerEntity.swift in Sources */,
+				9F6D94AB2D3159760030B198 /* ScoreGameViewController.swift in Sources */,
 				9F6D94A52D300D000030B198 /* BankActorProblem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

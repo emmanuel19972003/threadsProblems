@@ -7,7 +7,7 @@
 
 import Foundation
 
-class bankProblemController: ControllerProtocol {
+final class bankProblemController: ControllerProtocol {
     var view: ViewControllerProtocol?
     
     let lock = NSLock()

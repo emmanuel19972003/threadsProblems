@@ -11,7 +11,7 @@ protocol PhilosopherGameProtocol {
     func setLabelColor(id: Int, color: UIColor)
 }
 
-class PhilosopherGame {
+final class PhilosopherGame {
     
     var view: DiningPhilosophersController
     
@@ -43,7 +43,7 @@ class PhilosopherGame {
     
 }
 
-class Philosopher {
+final class Philosopher {
     let id: Int
     var chopStickRight: ChopStick
     var chopStickLeft: ChopStick
@@ -89,7 +89,7 @@ class Philosopher {
 }
 
 
-class ChopStick {
+final class ChopStick {
     private let lock = NSLock()
     func useChopStick() {
         lock.lock()
