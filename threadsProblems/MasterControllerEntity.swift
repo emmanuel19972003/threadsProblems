@@ -8,7 +8,7 @@
 import Foundation
 
 struct selectedProblem {
-    let problem: ListOfProblems = .scoreGame
+    let problem: ListOfProblems = .future
     let customProblem: ListOfCustomProblemsProblems? = nil
 }
 
@@ -23,6 +23,7 @@ enum ListOfProblems: String {
     case cancelableTask
     case bankActorProblem
     case scoreGame
+    case future
     func getController() -> ControllerProtocol {
         switch self {
         case .test:
@@ -45,6 +46,8 @@ enum ListOfProblems: String {
             BankActorProblem()
         case .scoreGame:
             ScoreGameViewController()
+        case .future:
+            FutureImplementation()
         }
     }
 }

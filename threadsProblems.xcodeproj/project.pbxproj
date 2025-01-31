@@ -27,6 +27,8 @@
 		9FB580DB2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */; };
 		9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580E92C7E8D0F00B0089A /* testController.swift */; };
 		9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580EB2C7E934C00B0089A /* MasterController.swift */; };
+		9FB6E4CA2D4D26C90050B578 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6E4C92D4D26C90050B578 /* Future.swift */; };
+		9FB6E4CC2D4D2A290050B578 /* FutureImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6E4CB2D4D2A290050B578 /* FutureImplementation.swift */; };
 		9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B512C8734490035F087 /* HolaProblem.swift */; };
 		9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD5B532C873E8F0035F087 /* stringExtencion.swift */; };
 		9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC69D9D2CA5A181001B4964 /* bankProblem.swift */; };
@@ -79,6 +81,8 @@
 		9FB580DA2C7E84E200B0089A /* threadsProblemsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threadsProblemsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FB580E92C7E8D0F00B0089A /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
 		9FB580EB2C7E934C00B0089A /* MasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
+		9FB6E4C92D4D26C90050B578 /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		9FB6E4CB2D4D2A290050B578 /* FutureImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureImplementation.swift; sourceTree = "<group>"; };
 		9FBD5B512C8734490035F087 /* HolaProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaProblem.swift; sourceTree = "<group>"; };
 		9FBD5B532C873E8F0035F087 /* stringExtencion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtencion.swift; sourceTree = "<group>"; };
 		9FC69D9D2CA5A181001B4964 /* bankProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankProblem.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 		9FB580EF2C7E94E900B0089A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FB6E4C82D4D26BA0050B578 /* Future */,
 				9F6D94A32D300CB50030B198 /* BnackActorProblem */,
 				9FDA61502CC7FE3700C16E73 /* Cancelabel */,
 				9FE8AE812CADBA650081DD80 /* conditional locks */,
@@ -242,6 +247,15 @@
 				9FB580E92C7E8D0F00B0089A /* testController.swift */,
 			);
 			path = testController;
+			sourceTree = "<group>";
+		};
+		9FB6E4C82D4D26BA0050B578 /* Future */ = {
+			isa = PBXGroup;
+			children = (
+				9FB6E4C92D4D26C90050B578 /* Future.swift */,
+				9FB6E4CB2D4D2A290050B578 /* FutureImplementation.swift */,
+			);
+			path = Future;
 			sourceTree = "<group>";
 		};
 		9FBD5B502C87343A0035F087 /* holaProblem */ = {
@@ -434,8 +448,10 @@
 				9FC69D9E2CA5A181001B4964 /* bankProblem.swift in Sources */,
 				9F6D94A92D31594F0030B198 /* ScoreGame.swift in Sources */,
 				9FC69DA02CA5A435001B4964 /* bankProblemConditionLockController.swift in Sources */,
+				9FB6E4CC2D4D2A290050B578 /* FutureImplementation.swift in Sources */,
 				9FB580BC2C7E84E000B0089A /* ViewController.swift in Sources */,
 				9FE8AE852CADBF120081DD80 /* HolaConditionLock.swift in Sources */,
+				9FB6E4CA2D4D26C90050B578 /* Future.swift in Sources */,
 				9FE8AE832CADBA810081DD80 /* ConditionLockExampleController.swift in Sources */,
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
 				9FDA61522CC7FE4F00C16E73 /* CancelableTask.swift in Sources */,

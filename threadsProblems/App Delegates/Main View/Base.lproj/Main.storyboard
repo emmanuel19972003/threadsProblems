@@ -110,6 +110,11 @@
                     </view>
                     <connections>
                         <outlet property="background" destination="8bC-Xf-vdC" id="dwP-fW-ciR"/>
+                        <outlet property="btn1" destination="4Dg-7Q-Doc" id="36e-yt-DJz"/>
+                        <outlet property="btn2" destination="W0y-Yo-e5S" id="Phq-Jz-8GS"/>
+                        <outlet property="btn3" destination="YtM-gn-JUn" id="Uot-W5-NZa"/>
+                        <outlet property="btn4" destination="klU-Tb-PwO" id="5YS-jq-Xwi"/>
+                        <outlet property="btn5" destination="jbN-Oe-HQX" id="Wre-TT-S4G"/>
                         <outlet property="label1" destination="raS-2A-n3k" id="P3h-RO-ob7"/>
                         <outlet property="label2" destination="Q59-EA-lRC" id="C1V-kb-7kj"/>
                         <outlet property="label3" destination="dne-h4-z4b" id="p76-3y-lta"/>

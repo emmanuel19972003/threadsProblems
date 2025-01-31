@@ -17,6 +17,11 @@ protocol ViewControllerProtocol: AnyObject {
     func setLabel1(Text: String)
     func setLabel2(Text: String)
     func setLabel3(Text: String)
+    func setButton1Label(label: String)
+    func setButton2Label(label: String)
+    func setButton3Label(label: String)
+    func setButton4Label(label: String)
+    func setButton5Label(label: String)
     func setLabel1Color(color: UIColor)
     func setLabel2Color(color: UIColor)
     func setLabel3Color(color: UIColor)
@@ -33,7 +38,12 @@ protocol ControllerProtocol: AnyObject {
 final class ViewController: UIViewController, ViewControllerProtocol {
     
     var controller: ControllerProtocol?
-     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
+    
     @IBOutlet private weak var label1: UILabel! {
         didSet {
             label1.layer.cornerRadius = 5
@@ -57,6 +67,17 @@ final class ViewController: UIViewController, ViewControllerProtocol {
             label3.layer.borderWidth = 0.5
         }
     }
+    
+    
+    @IBOutlet weak var btn1: UIButton!
+    
+    @IBOutlet weak var btn2: UIButton!
+    
+    @IBOutlet weak var btn3: UIButton!
+    
+    @IBOutlet weak var btn4: UIButton!
+    
+    @IBOutlet weak var btn5: UIButton!
     
     @IBOutlet private var background: UIView!
     
@@ -135,6 +156,26 @@ final class ViewController: UIViewController, ViewControllerProtocol {
         DispatchQueue.main.async { [weak self] in
             self?.background.backgroundColor = color
         }
+    }
+    
+    func setButton1Label(label: String) {
+        btn1.setTitle(label, for: .normal)
+    }
+    
+    func setButton2Label(label: String) {
+        btn2.setTitle(label, for: .normal)
+    }
+    
+    func setButton3Label(label: String) {
+        btn3.setTitle(label, for: .normal)
+    }
+    
+    func setButton4Label(label: String) {
+        btn4.setTitle(label, for: .normal)
+    }
+    
+    func setButton5Label(label: String) {
+        btn5.setTitle(label, for: .normal)
     }
 }
 
