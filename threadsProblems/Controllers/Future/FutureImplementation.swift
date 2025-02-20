@@ -10,7 +10,6 @@ import Foundation
 final class FutureImplementation: ControllerExtendedProtocol {
     
     var counter = 0
-    
     var view: (any ViewControllerProtocol)?
     let myTask = Future()
     
