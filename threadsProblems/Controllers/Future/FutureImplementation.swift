@@ -50,3 +50,4 @@ final class FutureImplementation: ControllerExtendedProtocol {
         view?.setButton4Label(label: "Show value")
     }
 }
+

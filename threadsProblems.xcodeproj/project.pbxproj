@@ -14,9 +14,6 @@
 		9F6D94A72D300D7A0030B198 /* BankActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A62D300D7A0030B198 /* BankActor.swift */; };
 		9F6D94A92D31594F0030B198 /* ScoreGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A82D31594F0030B198 /* ScoreGame.swift */; };
 		9F6D94AB2D3159760030B198 /* ScoreGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94AA2D3159760030B198 /* ScoreGameViewController.swift */; };
-		9F6EC69E2DC279D7001988D2 /* TreeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6EC69D2DC279D7001988D2 /* TreeStruct.swift */; };
-		9F6EC6A02DC27AAD001988D2 /* TreeUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6EC69F2DC27AAD001988D2 /* TreeUse.swift */; };
-		9F6EC6A42DC3C2F3001988D2 /* ViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6EC6A32DC3C2F3001988D2 /* ViewControllerProtocols.swift */; };
 		9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA129A32C9A153800968FF6 /* lightsProblemController.swift */; };
 		9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */; };
 		9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB580B72C7E84E000B0089A /* AppDelegate.swift */; };
@@ -67,9 +64,6 @@
 		9F6D94A62D300D7A0030B198 /* BankActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankActor.swift; sourceTree = "<group>"; };
 		9F6D94A82D31594F0030B198 /* ScoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGame.swift; sourceTree = "<group>"; };
 		9F6D94AA2D3159760030B198 /* ScoreGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGameViewController.swift; sourceTree = "<group>"; };
-		9F6EC69D2DC279D7001988D2 /* TreeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStruct.swift; sourceTree = "<group>"; };
-		9F6EC69F2DC27AAD001988D2 /* TreeUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeUse.swift; sourceTree = "<group>"; };
-		9F6EC6A32DC3C2F3001988D2 /* ViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocols.swift; sourceTree = "<group>"; };
 		9FA129A32C9A153800968FF6 /* lightsProblemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightsProblemController.swift; sourceTree = "<group>"; };
 		9FB390E42C7F767E00A22E72 /* DiningPhilosophersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersController.swift; sourceTree = "<group>"; };
 		9FB580B42C7E84E000B0089A /* threadsProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadsProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,15 +144,6 @@
 			path = ScoreGame;
 			sourceTree = "<group>";
 		};
-		9F6EC69C2DC279C7001988D2 /* Tree */ = {
-			isa = PBXGroup;
-			children = (
-				9F6EC69D2DC279D7001988D2 /* TreeStruct.swift */,
-				9F6EC69F2DC27AAD001988D2 /* TreeUse.swift */,
-			);
-			path = Tree;
-			sourceTree = "<group>";
-		};
 		9FB390E32C7F74F800A22E72 /* DiningPhilosophersGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +220,6 @@
 			children = (
 				9FB580EB2C7E934C00B0089A /* MasterController.swift */,
 				9FB580BB2C7E84E000B0089A /* ViewController.swift */,
-				9F6EC6A32DC3C2F3001988D2 /* ViewControllerProtocols.swift */,
 				9FB580BD2C7E84E000B0089A /* Main.storyboard */,
 			);
 			path = "Main View";
@@ -244,7 +228,6 @@
 		9FB580EF2C7E94E900B0089A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F6EC69C2DC279C7001988D2 /* Tree */,
 				9FB6E4C82D4D26BA0050B578 /* Future */,
 				9F6D94A32D300CB50030B198 /* BnackActorProblem */,
 				9FDA61502CC7FE3700C16E73 /* Cancelabel */,
@@ -459,7 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6EC69E2DC279D7001988D2 /* TreeStruct.swift in Sources */,
 				9FB580EC2C7E934C00B0089A /* MasterController.swift in Sources */,
 				9FBD5B522C8734490035F087 /* HolaProblem.swift in Sources */,
 				9FBD5B542C873E8F0035F087 /* stringExtencion.swift in Sources */,
@@ -475,11 +457,9 @@
 				9FDA61522CC7FE4F00C16E73 /* CancelableTask.swift in Sources */,
 				9F6D94A72D300D7A0030B198 /* BankActor.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
-				9F6EC6A42DC3C2F3001988D2 /* ViewControllerProtocols.swift in Sources */,
 				9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */,
 				9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
-				9F6EC6A02DC27AAD001988D2 /* TreeUse.swift in Sources */,
 				670E94DC2CAA1A5B005EE2C3 /* propertyWrapper.swift in Sources */,
 				674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */,
 				9FE8AE7F2CADA0E40081DD80 /* MasterControllerEntity.swift in Sources */,
