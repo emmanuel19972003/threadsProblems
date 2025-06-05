@@ -9,7 +9,7 @@ import UIKit
 
 class MasterController {
     
-    let problem: ListOfProblems = selectedProblem().problem
+    var problem: problemType = selectedProblemByType()
     
     let customProblem: ListOfCustomProblemsProblems? = selectedProblem().customProblem
     
@@ -20,6 +20,16 @@ class MasterController {
         return customViewProblem()
         
     }
+     
+    static func selectedProblemByType() -> problemType {
+        let type = typeOfSelectedProblem().selectedProblemType
+        switch type {
+        case .letCoedProblem:
+            return selectedProblem().letCoedProblem
+        case .thread:
+            return selectedProblem().problem
+        }
+    }
 }
 
 extension MasterController {
@@ -27,7 +37,7 @@ extension MasterController {
     private func setController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        viewController.title = problem.rawValue
+        viewController.title = problem.rawValue()
         if let viewController = viewController as? ViewControllerProtocol {
             let controller = problem.getController()
             viewController.controller = controller

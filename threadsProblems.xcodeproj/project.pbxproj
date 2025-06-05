@@ -10,6 +10,10 @@
 		670E94DC2CAA1A5B005EE2C3 /* propertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670E94DB2CAA1A5B005EE2C3 /* propertyWrapper.swift */; };
 		674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */; };
 		9F0C8A992C99CFE50098E45E /* lightsProblem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */; };
+		9F287B052DF1FE3F0060F9EF /* problem 1061.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F287B042DF1FE3F0060F9EF /* problem 1061.txt */; };
+		9F287B072DF1FFF70060F9EF /* problem1061.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F287B062DF1FFF70060F9EF /* problem1061.swift */; };
+		9F287B0A2DF22C2A0060F9EF /* ListOfProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F287B092DF22C2A0060F9EF /* ListOfProblems.swift */; };
+		9F287B0C2DF22C3F0060F9EF /* letCoedProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F287B0B2DF22C3F0060F9EF /* letCoedProblems.swift */; };
 		9F6D94A52D300D000030B198 /* BankActorProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A42D300D000030B198 /* BankActorProblem.swift */; };
 		9F6D94A72D300D7A0030B198 /* BankActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A62D300D7A0030B198 /* BankActor.swift */; };
 		9F6D94A92D31594F0030B198 /* ScoreGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D94A82D31594F0030B198 /* ScoreGame.swift */; };
@@ -60,6 +64,10 @@
 		670E94DB2CAA1A5B005EE2C3 /* propertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyWrapper.swift; sourceTree = "<group>"; };
 		674C85292C84A2E300CBA90C /* DiningPhilosophersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningPhilosophersGame.swift; sourceTree = "<group>"; };
 		9F0C8A982C99CFE50098E45E /* lightsProblem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lightsProblem.storyboard; sourceTree = "<group>"; };
+		9F287B042DF1FE3F0060F9EF /* problem 1061.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "problem 1061.txt"; sourceTree = "<group>"; };
+		9F287B062DF1FFF70060F9EF /* problem1061.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = problem1061.swift; sourceTree = "<group>"; };
+		9F287B092DF22C2A0060F9EF /* ListOfProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProblems.swift; sourceTree = "<group>"; };
+		9F287B0B2DF22C3F0060F9EF /* letCoedProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letCoedProblems.swift; sourceTree = "<group>"; };
 		9F6D94A42D300D000030B198 /* BankActorProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankActorProblem.swift; sourceTree = "<group>"; };
 		9F6D94A62D300D7A0030B198 /* BankActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankActor.swift; sourceTree = "<group>"; };
 		9F6D94A82D31594F0030B198 /* ScoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGame.swift; sourceTree = "<group>"; };
@@ -118,12 +126,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F0C8A932C99C85A0098E45E /* custom View Problems */ = {
+		9F0C8A932C99C85A0098E45E /* Custom View Problems */ = {
 			isa = PBXGroup;
 			children = (
 				9FC69D9B2CA5A153001B4964 /* lightsProblem */,
 			);
-			path = "custom View Problems";
+			path = "Custom View Problems";
+			sourceTree = "<group>";
+		};
+		9F287B032DF1FDFC0060F9EF /* LetCodeProblems */ = {
+			isa = PBXGroup;
+			children = (
+				9F287B0E2DF22F6D0060F9EF /* Lexicographically Smallest Equivalent String */,
+			);
+			path = LetCodeProblems;
+			sourceTree = "<group>";
+		};
+		9F287B0E2DF22F6D0060F9EF /* Lexicographically Smallest Equivalent String */ = {
+			isa = PBXGroup;
+			children = (
+				9F287B042DF1FE3F0060F9EF /* problem 1061.txt */,
+				9F287B062DF1FFF70060F9EF /* problem1061.swift */,
+			);
+			path = "Lexicographically Smallest Equivalent String";
 			sourceTree = "<group>";
 		};
 		9F6D94A32D300CB50030B198 /* BnackActorProblem */ = {
@@ -179,8 +204,11 @@
 				9FB580ED2C7E94A300B0089A /* App Delegates */,
 				9FE8AE802CADA1260081DD80 /* extencions */,
 				9FE8AE7E2CADA0E40081DD80 /* MasterControllerEntity.swift */,
-				9FB580EF2C7E94E900B0089A /* Controllers */,
-				9F0C8A932C99C85A0098E45E /* custom View Problems */,
+				9F287B0B2DF22C3F0060F9EF /* letCoedProblems.swift */,
+				9F287B092DF22C2A0060F9EF /* ListOfProblems.swift */,
+				9F287B032DF1FDFC0060F9EF /* LetCodeProblems */,
+				9FB580EF2C7E94E900B0089A /* Thread Controllers */,
+				9F0C8A932C99C85A0098E45E /* Custom View Problems */,
 				9FB580C02C7E84E100B0089A /* Assets.xcassets */,
 				9FB580C22C7E84E200B0089A /* LaunchScreen.storyboard */,
 				9FB580C52C7E84E200B0089A /* Info.plist */,
@@ -225,7 +253,7 @@
 			path = "Main View";
 			sourceTree = "<group>";
 		};
-		9FB580EF2C7E94E900B0089A /* Controllers */ = {
+		9FB580EF2C7E94E900B0089A /* Thread Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9FB6E4C82D4D26BA0050B578 /* Future */,
@@ -238,7 +266,7 @@
 				9FB580F02C7E94F800B0089A /* testController */,
 				9F6D94AC2D31597C0030B198 /* ScoreGame */,
 			);
-			path = Controllers;
+			path = "Thread Controllers";
 			sourceTree = "<group>";
 		};
 		9FB580F02C7E94F800B0089A /* testController */ = {
@@ -414,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F287B052DF1FE3F0060F9EF /* problem 1061.txt in Resources */,
 				9FB580C42C7E84E200B0089A /* LaunchScreen.storyboard in Resources */,
 				9FB580C12C7E84E100B0089A /* Assets.xcassets in Resources */,
 				9FB580BF2C7E84E000B0089A /* Main.storyboard in Resources */,
@@ -456,13 +485,16 @@
 				9FB580B82C7E84E000B0089A /* AppDelegate.swift in Sources */,
 				9FDA61522CC7FE4F00C16E73 /* CancelableTask.swift in Sources */,
 				9F6D94A72D300D7A0030B198 /* BankActor.swift in Sources */,
+				9F287B0C2DF22C3F0060F9EF /* letCoedProblems.swift in Sources */,
 				9FB580EA2C7E8D0F00B0089A /* testController.swift in Sources */,
 				9FA129A42C9A153800968FF6 /* lightsProblemController.swift in Sources */,
+				9F287B0A2DF22C2A0060F9EF /* ListOfProblems.swift in Sources */,
 				9FB390E52C7F767E00A22E72 /* DiningPhilosophersController.swift in Sources */,
 				9FB580BA2C7E84E000B0089A /* SceneDelegate.swift in Sources */,
 				670E94DC2CAA1A5B005EE2C3 /* propertyWrapper.swift in Sources */,
 				674C852A2C84A2E300CBA90C /* DiningPhilosophersGame.swift in Sources */,
 				9FE8AE7F2CADA0E40081DD80 /* MasterControllerEntity.swift in Sources */,
+				9F287B072DF1FFF70060F9EF /* problem1061.swift in Sources */,
 				9F6D94AB2D3159760030B198 /* ScoreGameViewController.swift in Sources */,
 				9F6D94A52D300D000030B198 /* BankActorProblem.swift in Sources */,
 			);

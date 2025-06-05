@@ -7,49 +7,19 @@
 
 import Foundation
 
+struct typeOfSelectedProblem {
+    let selectedProblemType: typeOfProblem = .letCoedProblem
+}
+
 struct selectedProblem {
     let problem: ListOfProblems = .future
     let customProblem: ListOfCustomProblemsProblems? = nil
+    let letCoedProblem: LetCoedProblems = .problem1061
 }
 
-enum ListOfProblems: String {
-    case test
-    case hola
-    case philosopher
-    case bankProblem
-    case conditionLockPlayground
-    case ConditionLockExample
-    case HolaConditionLock
-    case cancelableTask
-    case bankActorProblem
-    case scoreGame
-    case future
-    func getController() -> ControllerProtocol {
-        switch self {
-        case .test:
-            testController()
-        case .hola:
-            HolaProblemController()
-        case .philosopher:
-            DiningPhilosophersController()
-        case .bankProblem:
-            bankProblemController()
-        case .conditionLockPlayground:
-            conditionLockPlaygroundController()
-        case .ConditionLockExample:
-            ConditionLockExampleController()
-        case .HolaConditionLock:
-            HolaConditionLockController()
-        case .cancelableTask:
-            CancelableTaskController()
-        case .bankActorProblem:
-            BankActorProblem()
-        case .scoreGame:
-            ScoreGameViewController()
-        case .future:
-            FutureImplementation()
-        }
-    }
+enum typeOfProblem {
+    case thread
+    case letCoedProblem
 }
 
 enum ListOfCustomProblemsProblems {
@@ -63,4 +33,9 @@ enum ListOfCustomProblemsProblems {
     func getControllerID() -> String {
         "lightsProblemController"
     }
+}
+
+protocol problemType {
+    func getController() -> ControllerProtocol
+    func rawValue() -> String
 }
