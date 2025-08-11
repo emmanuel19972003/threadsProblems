@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 final class Problem1061: ControllerProtocol {
     
     var view: (any ViewControllerProtocol)?
