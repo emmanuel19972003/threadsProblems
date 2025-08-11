@@ -22,6 +22,18 @@ class Node<T: Equatable & Comparable> {
         return traversal(root: self)
     }
     
+    func findValue(vale: T) -> Bool {
+        return findValue(root: self, vale: vale)
+    }
+    
+    func showDepth() -> [[T]] {
+        return showDepth(root: self, stack: [T]())
+    }
+    
+    func findDepth() -> Int {
+        return findDepth(root: self, stack: [T]())
+    }
+    
     private func traversal(root: Node<T>) -> [T] {
         var result: [T] = []
         
@@ -43,11 +55,6 @@ class Node<T: Equatable & Comparable> {
         return result
     }
     
-    func findValue(vale: T) -> Bool {
-        return findValue(root: self, vale: vale)
-    }
-    
-    
     private func findValue(root: Node<T>, vale: T) -> Bool {
         if root.value == vale {
             return true
@@ -67,4 +74,51 @@ class Node<T: Equatable & Comparable> {
         
         return false
     }
+    
+    
+    private func findDepth(root: Node<T>, stack: [T]) -> Int {
+        var longestStack = 0
+        var currentStack = stack
+        currentStack.append(root.value)
+        if let leftBranch = root.left {
+            let newValues = findDepth(root: leftBranch, stack: currentStack)
+            longestStack = longestStack < newValues ? newValues : longestStack
+        }
+        
+        if let rightBranch = root.right {
+            let newValues = findDepth(root: rightBranch, stack: currentStack)
+            longestStack = longestStack < newValues ? newValues : longestStack
+        }
+        print(currentStack)
+        longestStack = longestStack < currentStack.count ? currentStack.count : longestStack
+        return longestStack
+    }
+    
+    private func showDepth(root: Node<T>, stack: [T]) -> [[T]] {
+        var returnStack = [[T]]()
+        var currentStack = stack
+        currentStack.append(root.value)
+        var hasChile = false
+        if let leftBranch = root.left {
+            hasChile = true
+            let newValues = showDepth(root: leftBranch, stack: currentStack)
+            newValues.forEach {
+                returnStack.append($0)
+            }
+        }
+        
+        if let rightBranch = root.right {
+            hasChile = true
+            let newValues = showDepth(root: rightBranch, stack: currentStack)
+            newValues.forEach {
+                returnStack.append($0)
+            }
+        }
+        
+        if !hasChile {
+            returnStack.append(currentStack)
+        }
+        return returnStack
+    }
 }
+

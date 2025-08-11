@@ -32,9 +32,10 @@ class TreeTraversal: ControllerProtocol {
             view?.setLabel2(Text: "press button 1 first")
             return
         }
-        view?.setLabel1(Text: findSequence(root: node, value: 12) ? "12 true" : "12 false")
-        view?.setLabel2(Text: findSequence(root: node, value: 126) ? "124 true" : "124 false")
-        view?.setLabel3(Text: findSequence(root: node, value: 1278) ? "125 true" : "125 false")
+        print(node.findDepth())
+        
+        view?.setLabel2(Text: "Done")
+
         
     }
     
@@ -65,28 +66,4 @@ class TreeTraversal: ControllerProtocol {
         return false
 
     }
-    
-    
-    private func traversal<T:Equatable>(root: Node<T>) -> [T] {
-        var result: [T] = []
-        
-        if let branch = root.left {
-            let newValues = traversal(root: branch)
-            newValues.forEach {
-                result.append($0)
-            }
-        }
-        
-        result.append(root.value)
-        
-        if let branch = root.right {
-            let newValues = traversal(root: branch)
-            newValues.forEach {
-                result.append($0)
-            }
-        }
-        return result
-    }
-
-    
 }
