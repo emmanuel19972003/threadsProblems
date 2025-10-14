@@ -14,7 +14,7 @@ struct typeOfSelectedProblem {
 struct selectedProblem {
     let problem: ListOfProblems = .future
     let customProblem: ListOfCustomProblemsProblems? = nil
-    let letCoedProblem: LetCoedProblems = .teeTraversal
+    let letCoedProblem: LetCoedProblems = .triangle
 }
 
 enum typeOfProblem {

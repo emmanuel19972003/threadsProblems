@@ -9,7 +9,7 @@ import Foundation
 
 class Future {
     enum FutureState: String {
-        case dns
+        case dns//did not start 
         case running
         case success
         case cancel

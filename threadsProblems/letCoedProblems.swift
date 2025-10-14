@@ -13,6 +13,10 @@ enum LetCoedProblems: String, problemType {
     case problem2434
     case problem3170
     case teeTraversal
+    case recursion
+    case sortMatrixbyDiagonals
+    case twoPointNoneInside
+    case triangle
     
     func getController() -> ControllerProtocol {
         switch self {
@@ -24,6 +28,14 @@ enum LetCoedProblems: String, problemType {
             Problem3170()
         case .teeTraversal:
             TreeTraversal()
+        case .recursion:
+            RecursionProblemsView()
+        case .sortMatrixbyDiagonals:
+            SortMatrixbyDiagonalsView()
+        case .twoPointNoneInside:
+            TwoPointNoneInsideView()
+        case .triangle:
+            TriangleView()
         }
     }
     
