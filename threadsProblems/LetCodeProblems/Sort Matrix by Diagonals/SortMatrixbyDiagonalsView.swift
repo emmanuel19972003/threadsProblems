@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SortMatrixbyDiagonalsView: ControllerProtocol {
+final class SortMatrixbyDiagonalsView: ControllerProtocol {
     var view: (any ViewControllerProtocol)?
     
     let greed = [[1,7,3],[9,8,2],[4,5,6]]
@@ -40,6 +40,4 @@ class SortMatrixbyDiagonalsView: ControllerProtocol {
         print(result)
         view?.setLabel1(Text: "\(result)")
     }
-    
-    
 }

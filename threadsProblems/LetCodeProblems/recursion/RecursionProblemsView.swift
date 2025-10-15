@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecursionProblemsView: ControllerProtocol {
+final class RecursionProblemsView: ControllerProtocol {
     var view: (any ViewControllerProtocol)?
     
     let recursion = RecursionProblems()
@@ -28,6 +28,4 @@ class RecursionProblemsView: ControllerProtocol {
     func button3Tapped() {
         
     }
-    
-    
 }

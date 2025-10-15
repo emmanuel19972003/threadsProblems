@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Problem3170: ControllerProtocol {
+final class Problem3170: ControllerProtocol {
     var view: (any ViewControllerProtocol)?
     
     func button1Tapped() {

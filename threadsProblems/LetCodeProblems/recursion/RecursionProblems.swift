@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecursionProblems {
+final class RecursionProblems {
     func multiplay(a: Int, b: Int) -> Int {
         if b == 0 {
             return 0

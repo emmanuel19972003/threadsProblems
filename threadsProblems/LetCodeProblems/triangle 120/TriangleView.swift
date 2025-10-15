@@ -29,8 +29,4 @@ class TriangleView: ControllerProtocol {
     func button3Tapped() {
         
     }
-    
-    
-    
-    
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SortMatrixbyDiagonals {
+final class SortMatrixbyDiagonals {
     func sortMatrix(_ grid: [[Int]]) -> [[Int]] {
 
         let orderTop = organizeTop(getTopDiagonals(grid))

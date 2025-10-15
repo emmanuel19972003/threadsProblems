@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TreeTraversal: ControllerProtocol {
+final class TreeTraversal: ControllerProtocol {
     var view: (any ViewControllerProtocol)?
     
     var node: Node<Int>?
